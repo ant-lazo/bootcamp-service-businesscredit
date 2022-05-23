@@ -41,4 +41,9 @@ public class BusinessCreditImpl implements IBusinessCreditService {
 		return bcrepo.count();
 	}
 
+	@Override
+	public Flux<BusinessCredit> findByIdCustomerEnterprise(String idCustomer) {
+		return bcrepo.findByIdCustomerEnterprise(idCustomer);
+	}
+
 }
